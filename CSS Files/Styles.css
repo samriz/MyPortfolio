@@ -23,11 +23,19 @@ hr
     margin-right: auto;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 /*id selector styles*/
 
 #Intro
 {
-    /*text-align: center;*/
+    text-align: center;
 }
 
 /*class selector styles*/

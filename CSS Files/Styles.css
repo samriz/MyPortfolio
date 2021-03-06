@@ -1,6 +1,14 @@
+/*element selector styles*/
+
 img
 {
     width: 150px;
     height: 200px;
     text-align: center;
+}
+
+/*id selector styles*/
+#Intro
+{
+    /*text-align: center;*/
 }

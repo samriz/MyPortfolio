@@ -13,10 +13,12 @@ function CreateMenu(links)
         var textnode = document.createTextNode(links[i].slice(0,position));
         aTags[i].appendChild(textnode);                
     }
+    //Menu.item(i).innerHTML += " ";
     for(let i = 0; i < Menu.length; i++)
     {
         for(let j = 0; j < aTags.length; j++)
         {
+            
             Menu.item(i).appendChild(aTags[j]);
             //aTags[j].appendChild(document.createElement("p"));
             if(j != aTags.length-1) Menu.item(i).innerHTML += " | ";

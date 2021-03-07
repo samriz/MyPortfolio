@@ -19,6 +19,7 @@ function CreateMenu(links)
         {
             Menu.item(i).appendChild(aTags[j]);
             //aTags[j].appendChild(document.createElement("p"));
+            if(j != aTags.length-1) Menu.item(i).innerHTML += " | ";
         }            
     }
 }

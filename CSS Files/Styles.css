@@ -44,3 +44,9 @@ p {
 {
     
 }
+
+.vl 
+{
+    border-left: 1px solid black;
+    height: 10px;
+}

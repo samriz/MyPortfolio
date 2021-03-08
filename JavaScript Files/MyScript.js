@@ -7,7 +7,10 @@ function CreateMenu(links)
     for(let i = 0; i < aTags.length; i++)
     {
         aTags[i] = document.createElement("a");
-        aTags[i].setAttribute("href", links[i]);
+
+        //set link here
+        //aTags[i].setAttribute("href", "./" + links[i]);
+        aTags[i].setAttribute("href", SetLink(links[i]));
         aTags[i].setAttribute("class", "MenuItem");
         var position = links[i].search(".html");
         var textnode = document.createTextNode(links[i].slice(0,position));
@@ -22,6 +25,11 @@ function CreateMenu(links)
             if(j != aTags.length-1) Menu.item(i).innerHTML += " | ";
         }            
     }
+}
+
+function SetLink(link)
+{
+    return "./" + link;
 }
 
 function FindFiles(directoryPath)

@@ -20,7 +20,7 @@
 <body>
     <div class="Menu"></div>
     <script>
-        var extension = ".html";
+        var extension = ".php";
         var links = new Array("Home" + extension, "Resume" + extension, "About"  + extension);
         CreateMenu(links,extension);
     </script>

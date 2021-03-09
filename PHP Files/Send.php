@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../CSS Files/Styles.css">
     <script src="../JavaScript Files/MyScript.js"></script>
 
-    <title>Sameer Rizvi &mdash; Inquiry</title>
+    <title>Sameer Rizvi &mdash; Send</title>
 </head>
 
 <body>
@@ -25,19 +25,16 @@
         CreateMenu(links,extension);
     </script>
     <div id="Intro" class="jumbotron">
-        <h1>Inquiries</h1>
+        <!--<h1>Inquiries</h1>-->
         <!--<p>For Inquiries: <a href = "mailto: srizv82@gmail.com">srizv82@gmail.com</a></p>-->
     </div>
     
     <hr> <!--this is a horizontal line-->
 
     <center>
-        <form action="./Send.php" method="post">
-            <p>Name: <input type="text" name="name" /></p>
-            <p>Email: <input type="text" name="email" /></p>
-            <p>Message: <textarea type="text" name="message"></textarea></p>
-            <p><input type="submit" /></p>
-        </form>
+        <?php
+
+        ?>
     </center>   
 </body>
 </html>

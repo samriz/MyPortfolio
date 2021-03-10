@@ -35,6 +35,7 @@
         <form action="./Send.php" method="post">
             <p>Name: <input type="text" name="name" /></p>
             <p>Email: <input type="text" name="email" /></p>
+            <p>Subject: <input type="text" name="subject" /></p>
             <p>Message: <textarea type="text" name="message"></textarea></p>
             <p><input type="submit" /></p>
         </form>

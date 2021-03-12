@@ -7,12 +7,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--React-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
     <!--My CSS and JavaScript below-->
-    <!--<link rel="stylesheet" href="C:\Users\srizv\OneDrive\Documents\My Portfolio\CSS Files\Styles.css">
-    <script src="C:\Users\srizv\OneDrive\Documents\My Portfolio\JavaScript Files\MyScript.js"></script>-->
-    <!--My CSS and JavaScript below-->
-    <link rel="stylesheet" href="../CSS Files/Styles.css">
-    <script src="../JavaScript Files/MyScript.js"></script>
+    <link rel="stylesheet" href="../CSSFiles/Styles.css">
+    <script src="../JavaScriptFiles/MyScript.js"></script>
+    <script src="../JavaScriptFiles/SendMail.js"></script>
 
     <title>Sameer Rizvi &mdash; Inquiry</title>
 </head>
@@ -32,13 +35,16 @@
     <hr> <!--this is a horizontal line-->
 
     <center>
-        <form action="./Send.php" method="post">
+        <form action="../JavaScriptFiles/SendMail.js" method="post">
             <p>Name: <input type="text" name="name" /></p>
             <p>Email: <input type="text" name="email" /></p>
             <p>Subject: <input type="text" name="subject" /></p>
             <p>Message: <textarea type="text" name="message"></textarea></p>
-            <p><input type="submit" /></p>
+            <p><input type="submit" onclick="mailfunction"/></p>
         </form>
-    </center>   
+    </center>
+
+
+    <p id="mailmessage"></p>
 </body>
 </html>

@@ -7,9 +7,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--React-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
     <!--My CSS and JavaScript below-->
-    <link rel="stylesheet" href="../CSS Files/Styles.css">
-    <script src="../JavaScript Files/MyScript.js"></script>
+    <link rel="stylesheet" href="../CSSFiles/Styles.css">
+    <script src="../JavaScriptFiles/MyScript.js"></script>
+    <script src="../JavaScriptFiles/SendMail.js"></script>
 
     <title>Sameer Rizvi &mdash; Resume</title>
 </head>
@@ -17,7 +23,7 @@
 <body>
     <div class="Menu"></div>
     <script>
-        var extension = ".html";
+        var extension = ".php";
         var links = new Array("Home" + extension, "Resume" + extension, "About"  + extension);
         CreateMenu(links,extension);
     </script>

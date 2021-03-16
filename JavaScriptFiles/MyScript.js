@@ -31,7 +31,7 @@ function SetLink(link)
     return "./" + link;
 }
 
-export function PopulateFileWithMenu()
+function PopulateFileWithMenu()
 {
     var extension = ".html";
     var links = new Array("Home" + extension, "Resume" + extension, "About"  + extension);

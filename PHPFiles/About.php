@@ -31,7 +31,7 @@
             <img src="../Pictures/LinkedInPicture1.png" id="profilepic" class="center">
         </p>
         <!--<p>For Inquiries: <a href = "mailto: srizv82@gmail.com">srizv82@gmail.com</a></p>-->
-        <a href = "./Message.html">For Inquiries</a>
+        <a href = "./Message.php">For Inquiries</a>
     </div>
     
     <hr> <!--this is a horizontal line-->
@@ -167,6 +167,6 @@
     </footer>
 </body>
 <script>
-    PopulateFileWithMenu(".html");
+    PopulateFileWithMenu(".php");
 </script>
 </html>

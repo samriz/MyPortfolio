@@ -29,6 +29,6 @@
     </footer>
 </body>
 <script>
-    PopulateFileWithMenu(".html");
+    PopulateFileWithMenu(".php");
 </script>
 </html>

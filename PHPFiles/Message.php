@@ -37,7 +37,7 @@
             <!--<p><input type="text" name="subject" id="subject" placeholder="Subject"/></p>-->
             <p><textarea type="text" name="message" id="message" placeholder="Message"></textarea></p>
             <!--<input type="submit" onclick="mailfunction()"/>-->
-            <p><input type="button" name="send" id="send" value="Send"/></p>
+            <p><input type="button" id="send" name="send" value="Send"/></p>
         </form>
     </center>
     <p id="mailmessage"></p>
@@ -47,6 +47,6 @@
     </footer>
 </body>
 <script>
-  PopulateFileWithMenu(".html");
+  PopulateFileWithMenu(".php");
 </script>
 </html>

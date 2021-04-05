@@ -29,9 +29,9 @@ function CreateMenu(links, extension)
 
 function SetLink(link){return "./" + link;}
 
-function PopulateFileWithMenu()
+function PopulateFileWithMenu(extension)
 {
-    var extension = ".html";
+    //var extension = ".html";
     var links = new Array("Home" + extension, "Resume" + extension, "About"  + extension);
     CreateMenu(links,extension);
 }

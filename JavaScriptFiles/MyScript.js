@@ -1,7 +1,7 @@
 
 function CreateMenu(links, extension)
 {
-    var Menu = document.getElementsByClassName("menu");
+    var Menu = document.getElementsByClassName("menu docked");
     var aTags = new Array(links.length);
     for(let i = 0; i < aTags.length; i++)
     {
@@ -45,7 +45,7 @@ function HideUnhide()
     }
 }
 
-function ChangeArrow()
+/*function ChangeArrow()
 {
     var expandItems = document.getElementsByClassName("expand");
     var collapseItems = document.getElementsByClassName("collapse");
@@ -81,7 +81,7 @@ function ChangeArrow2()
         before.style.display = "inline";
         after.style.display = "none";
     }
-}
+}*/
 
 /*function AddLineAfterIntro()
 {

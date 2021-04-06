@@ -22,6 +22,6 @@ $email_body = "You have received a new message from $name.\n".
     $headers = "From: $email_from \r\n";
     mail($to, $email_subject, $email_body, $headers);
 
-    header("Location: ../HTMLFiles/About.html");
+    header("Location: ../PHPFiles/About.php");
     exit();
 ?>

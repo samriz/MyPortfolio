@@ -14,7 +14,6 @@
     <!--My CSS and JavaScript below-->
     <link rel="stylesheet" href="../CSSFiles/Styles.css">
     <script type="text/javascript" src="../JavaScriptFiles/MyScript.js"></script>
-    <script type="text/javascript" src="../JavaScriptFiles/SendMail.js"></script>
 
     <title>Sameer Rizvi &mdash; Inquiry</title>
 </head>
@@ -25,25 +24,18 @@
     </div>
     <hr> <!--this is a horizontal line-->
     <center>
-        <form method="post" action="../PHPFiles/SendMail.php">
-        <!--<form>-->
-            <!--<p>Name: <input type="text" name="name" /></p>
-            <p>Email: <input type="text" name="email" id="useremail"/></p>
-            <p>Subject: <input type="text" name="subject" id="subject"/></p>
-            <p>Message: <textarea type="text" name="message" id="message"></textarea></p>
-            <p><input type="submit" onclick="mailfunction()"/></p>-->
+        <form name="emailform" id="emailform" action="https://getform.io/f/7f565008-7e7c-4d62-9f66-8ccab6c4f51f" method="POST">
             <p><input type="text" name="name" placeholder="Name"/></p>
             <p><input type="text" name="email" id="useremail" placeholder="Email"/></p>
-            <!--<p><input type="text" name="subject" id="subject" placeholder="Subject"/></p>-->
             <p><textarea type="text" name="message" id="message" placeholder="Message"></textarea></p>
-            <!--<input type="submit" onclick="mailfunction()"/>-->
-            <p><input type="button" name="send" id="send" value="Send"/></p>
+            <!--<p><input type="button" name="send" id="send" value="Send"/></p>-->
+            <p><button type="submit" name="send">Send</button></p>
         </form>
     </center>
     <p id="mailmessage"></p>
     <footer class="customfooter">
         <hr>
-        <p>Copyright © 2021 Sameer Rizvi</p>
+        <p>Copyright &copy; 2021 Sameer Rizvi</p>
     </footer>
 </body>
 <script>

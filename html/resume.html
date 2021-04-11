@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!--My CSS below-->
-    <link rel="stylesheet" href="../CSSFiles/Styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Bootstrap JavaScript below -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,48 +19,17 @@
     <!--AngularJS-->
     <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
-    <title>Sameer Rizvi &mdash; Contact</title>
+    <title>Sameer Rizvi &mdash; Resume</title>
 </head>
-<body>
+<body> 
     <nav class="menu docked"></nav>
-    <div id="messageintro" class="intro jumbotron">
-        <h1>Contact</h1>
+    <div id="resumeintro" class="intro jumbotron">
+        <h1>Resume</h1>
     </div>
     <hr>
-    <!--<div style="text-align:center">-->
-        <form name="emailform" id="emailform" action="https://getform.io/f/7f565008-7e7c-4d62-9f66-8ccab6c4f51f" method="POST" novalidate>
-            <div class="form-row justify-content-center">
-                <div class="col-md-2">
-                    <p><input type="text" name="name" id="name" ng-model="name" placeholder="Name" class="form-control" minlength="1" required/></p>
-                    <span style="color:red" ng-show="emailform.name.$touched && emailform.name.$invalid">
-                        <span ng-show="emailform.name.$error.required">Name is required.</span>
-                    </span>
-                </div>
-                <div class="col-md-2">
-                    <p><input type="email" name="useremail" id="useremail" ng-model="useremail" placeholder="Email" class="form-control" minlength="1" required/></p>
-                    <span style="color:red" ng-show="emailform.useremail.$touched && emailform.useremail.$invalid">
-                        <span ng-show="emailform.useremail.$error.required">Email is required.</span>
-                        <span ng-show="emailform.useremail.$invalid">Incorrect email.</span>
-                    </span>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-md-4">
-                    <p><textarea type="text" name="message" id="message" ng-model="message" placeholder="Message" class="form-control" rows="5" minlength="1" required></textarea></p>
-                    <span style="color:red" ng-show="emailform.message.$touched && emailform.message.$invalid">
-                        <span ng-show="emailform.message.$error.required">Message is required.</span>
-                    </span>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-auto">
-                    <p><button type="submit" name="send" id="send" class="btn btn-outline-secondary" ng-disabled="emailform.name.$invalid || emailform.useremail.$invalid || emailform.message.$invalid">Send</button></p>
-                </div>
-            </div>      
-        </form>
-    <!--</div>-->
-    <p id="mailmessage"></p>
-    <footer class="customfooter text-center text-lg-start" id="contactfooter">
+
+    <iframe class="pdf" id="resume" title="Resume" src="../miscellaneous/SameerRizvi-Resume.pdf" width="100%" height="85%"></iframe>
+    <footer class="customfooter text-center text-lg-start">
         <hr>
         <div id="extlinksdiv">
             <a href="https://www.linkedin.com/in/sameer-rizvi-bb788375" target="_blank">                
@@ -74,12 +43,11 @@
               </svg></a>
             </div>
             <p>Copyright &copy; 2021 Sameer Rizvi</p>
-    </footer>  
+    </footer>
+    <!--My JavaScript below-->
+    <script type="text/javascript" src="../js/mymenu.js"></script>
+    <!-- <script>
+        PopulateFileWithMenuAsync(".html");
+    </script> -->
 </body>
-
-<!--My JavaScript below-->
-<script type="text/javascript" src="../JavaScriptFiles/MyMenu.js"></script>
-<!-- <script>
-    PopulateFileWithMenuAsync(".html");
-</script> -->
 </html>

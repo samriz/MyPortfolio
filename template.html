@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 <head>
+    <!--https://javascript.info/script-async-defer-->
+
     <!-- Bootstrap JavaScript below -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -18,52 +20,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 
     <!--My CSS below-->
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
 
-    <title>Sameer Rizvi &mdash; Contact</title>
+    <title>Sameer Rizvi &mdash; Template</title>
 </head>
 <body>
     <nav class="menu docked"></nav>
-    <header id="messageintro" class="intro jumbotron">
-        <h1>Contact Me</h1>      
+    <header id="templateintro" class="intro jumbotron">
+        <h1>Template Page</h1>
     </header>
+
     <hr/>
-    <!--<div style="text-align:center">-->
-        <form name="emailform" id="emailform" action="https://getform.io/f/7f565008-7e7c-4d62-9f66-8ccab6c4f51f" method="POST" novalidate>
-            <p class="text-center">To reach out to me, please fill out the contact form below.</p>
-            <div class="form-row justify-content-center">
-                <div class="col-md-2">
-                    <p><input type="text" name="name" id="username" ng-model="name" placeholder="Name" class="form-control" minlength="1" required/></p>
-                    <span style="color:red" ng-show="emailform.name.$touched && emailform.name.$invalid">
-                        <span ng-show="emailform.name.$error.required">Name is required.</span>
-                    </span>
-                </div>
-                <div class="col-md-2">
-                    <p><input type="email" name="email" id="useremail" ng-model="useremail" placeholder="Email" class="form-control" minlength="1" required/></p>
-                    <span style="color:red" ng-show="emailform.email.$touched && emailform.email.$invalid">
-                        <span ng-show="emailform.email.$error.required">Email is required.</span>
-                        <span ng-show="emailform.email.$invalid">Incorrect format.</span>
-                    </span>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-md-4">
-                    <p><textarea name="message" id="usermessage" ng-model="message" placeholder="Message" class="form-control" rows="5" minlength="1" required></textarea></p>
-                    <span style="color:red" ng-show="emailform.message.$touched && emailform.message.$invalid">
-                        <span ng-show="emailform.message.$error.required">Message is required.</span>
-                    </span>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-auto">
-                    <p><button type="submit" name="send" id="emailsender" class="btn btn-outline-secondary" ng-disabled="emailform.name.$invalid || emailform.email.$invalid || emailform.message.$invalid">Send</button></p>
-                </div>
-            </div>      
-        </form>
-    <!--</div>-->
-    <p id="mailmessage"></p>
-    <footer class="text-center text-lg-start" id="contactfooter">
-        <hr/>
+
+    <!--ADD CONTENT HERE-->
+
+
+    <footer class="text-center text-lg-start" id="homefooter">
+        <hr/>        
         <div id="extlinksdiv">
             <a href="https://www.linkedin.com/in/sameer-rizvi-bb788375" target="_blank">                
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -75,12 +48,12 @@
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
               </svg></a>
             </div>
-            <p>Copyright &copy; 2021 Sameer Rizvi</p>
-    </footer>  
+            <p>Copyright &copy; 2021 Sameer Rizvi</p>      
+    </footer>
 </body>
 
 <!--My JavaScript below-->
-<script type="text/javascript" src="../js/mymenu.js"></script>
+<script type="text/javascript" src="./js/mymenu.js"></script>
 <!-- <script>
     PopulateFileWithMenuAsync(".html");
 </script> -->

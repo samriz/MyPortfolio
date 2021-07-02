@@ -46,7 +46,7 @@ function CreateMenuAsync(links, extension)
     return Promise.resolve(Menu);
 }
 
-export async function PopulateFileWithMenuAsync(extension)
+async function PopulateFileWithMenuAsync(extension)
 {
     //var links = new Array("index", "resume", "about", "contact");
     var links = new Array("index", "about", "contact");
@@ -56,3 +56,5 @@ export async function PopulateFileWithMenuAsync(extension)
     }
     await CreateMenuAsync(links,extension); //waiting on Promise object
 }
+
+export default PopulateFileWithMenuAsync;
